@@ -29,5 +29,6 @@ services:
      - ./chinachu/conf/rules.json:/usr/local/chinachu/rules.json
      - ./chinachu/data:/usr/local/chinachu/data
      - ./recorded:/usr/local/chinachu/recorded
+     - /var/run/docker.sock:/var/run/docker.sock
     links:
      - mirakurun:container-mirakurun

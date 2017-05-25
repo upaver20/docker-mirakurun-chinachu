@@ -1,8 +1,8 @@
-FROM alpine:3.5
-MAINTAINER h-mineta <h-mineta@0nyx.net>
+FROM alpine
+MAINTAINER upaver20 <upa.ver.2.0@gmail.com>
 
 ARG REPOSITORY="git://github.com/Chinachu/Chinachu.git"
-ARG BRANCH="master"
+ARG BRANCH=gamma"
 
 RUN set -x \
 	&& apk upgrade --update \
@@ -13,6 +13,7 @@ RUN set -x \
 		curl \
 		procps \
 		ca-certificates \
+		docker \
 	\
 	&& apk add --virtual .build-deps \
 		git \

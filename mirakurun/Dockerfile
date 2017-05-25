@@ -1,5 +1,5 @@
-FROM alpine:3.5
-MAINTAINER h-mineta <h-mineta@0nyx.net>
+FROM alpine
+MAINTAINER upaver20 <upa.ver.2.0@gmail.com>
 
 RUN set -x \
 	&& apk upgrade --update \
