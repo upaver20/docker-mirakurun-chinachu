@@ -1,7 +1,7 @@
 {
   "uid" : "chinachu",
-  "recordedDir" : "/usr/local/chinachu/recorded/",
-  "temporaryDir": "/tmp/",
+  "recordedDir" : "/data/TV/",
+  "temporaryDir": "/data/TV/tmp/",
 
   "wuiUsers": [
     "akari:bakuhatsu"

@@ -28,7 +28,8 @@ services:
      - ./chinachu/conf/config.json:/usr/local/chinachu/config.json
      - ./chinachu/conf/rules.json:/usr/local/chinachu/rules.json
      - ./chinachu/data:/usr/local/chinachu/data
-     - ./recorded:/usr/local/chinachu/recorded
-     - /var/run/docker.sock:/var/run/docker.sock
+    volumes-from:
+     - TV_data
+     - docker_socket
     links:
      - mirakurun:container-mirakurun

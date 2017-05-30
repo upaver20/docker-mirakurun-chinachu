@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER upaver20 <upa.ver.2.0@gmail.com>
 
 ARG REPOSITORY="git://github.com/Chinachu/Chinachu.git"
-ARG BRANCH=gamma"
+ARG BRANCH="gamma"
 
 RUN set -x \
 	&& apk upgrade --update \
